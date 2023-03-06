@@ -22,4 +22,15 @@ html {
     padding: 10px;
     margin: 10px;
     background: rgba(16, 233, 215, 0.178);
+    width: 31%;
+  }
+
+  .firstRow {
+    display: flex;
+  }
+
+  .secondRow {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
   }
