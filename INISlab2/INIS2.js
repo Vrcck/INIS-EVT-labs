@@ -8,6 +8,7 @@ let filmTree;
 let evOne;
 let evTwo;
 let evTree;
+let privat = false;
 
 filmOne = prompt('Один из последних просмотренных фильмов? ');
 evOne = prompt('На сколько оцените его? ');
@@ -19,15 +20,20 @@ evTree = prompt('На сколько оцените его? ');
 personalMovieDB.movies[filmOne] = evOne;
 personalMovieDB.movies[filmTwo] = evTwo;
 personalMovieDB.movies[filmTree] = evTree;
+personalMovieDB.privat = privat;
 
-personalMovieDB.privat = prompt('Вы хотите посмотреть таблицу? true/false');
 
-function tabl(personalMovieDB) {
-    if (personalMovieDB.privat != true) {
-        for (const property in personalMovieDB) {
-            console.log(`${property}: ${object[property]}`);
-        }
+if (personalMovieDB.privat != true) {
+    document.getElementById("container").innerHTML = '<table><tr><td>Названия фильмов</td><td>Оценка фильмов</td></tr></table>';
+    createTable();
+    console.log(personalMovieDB.privat);
+};
+
+function createTable() {
+    for (key in personalMovieDB.movies)
+    {
+        let row = document.createElement('tr');
+        row.innerHTML = `<td>${key}</td><td>${personalMovieDB.movies[key]}</td>`;
+        document.querySelector('table').appendChild(row);
     }
-}
-
-console.log(personalMovieDB);
+};
