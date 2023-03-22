@@ -1,5 +1,5 @@
 let personalMovieDB = {
-    privat,
+    privat: false,
     movies: {}
 };
 let filmOne;
@@ -20,3 +20,14 @@ personalMovieDB.movies[filmOne] = evOne;
 personalMovieDB.movies[filmTwo] = evTwo;
 personalMovieDB.movies[filmTree] = evTree;
 
+personalMovieDB.privat = prompt('Вы хотите посмотреть таблицу? true/false');
+
+function tabl(personalMovieDB) {
+    if (personalMovieDB.privat != true) {
+        for (const property in personalMovieDB) {
+            console.log(`${property}: ${object[property]}`);
+        }
+    }
+}
+
+console.log(personalMovieDB);
