@@ -1,5 +1,5 @@
 let personalMovieDB = {
-    privat: numberOfFilms,
+    privat,
     movies: {}
 };
 let filmOne;
