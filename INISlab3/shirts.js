@@ -76,17 +76,19 @@ const shirts = [{
     }
 },
 {
-    "name": "BSUIR",
-    "description": "BSUIR mission is to train engineers and scientists capable of generating and implementing innovative ideas, creating competitive high technology products in the spheres of computer science and electronics.",
-    "price": "$6.99",
-    "colors": {
-        "white": {
-            "front": "shirt_images/bsuir-white-front.png",
-            "back": "shirt_images/bsuir-white-back.png"
+    name: "BSUIR",
+    description: "BSUIR mission is to train engineers and scientists capable of generating and implementing innovative ideas, creating competitive high technology products in the spheres of computer science and electronics.",
+    price: "$6.99",
+    colors: {
+        white: {
+            front: "shirt_images/bsuir-white-front.png",
+            back: "shirt_images/bsuir-white-back.png"
         }
     },
-    "default": {
-        "front": "shirt_images/default-m-front.png",
-        "back": "shirt_images/default-m-back.png"
+    default: {
+        front: "shirt_images/default-m-front.png",
+        back: "shirt_images/default-m-back.png"
     }
 }];
+
+export {shirts};
