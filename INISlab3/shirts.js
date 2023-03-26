@@ -57,22 +57,22 @@ const shirts = [{
     }
 },
 {
-    "name": "Forever Plaid",
-    "price": "$13.99",
-    "description": "Proudly wear your tartan plaid as a patch on your front shirt pocket. And on the back, ask the important question that all CMU students should know the answer to: got plaid?",
-    "colors": {
-        "white": {
+    name: "Forever Plaid",
+    price: "$13.99",
+    description: "Proudly wear your tartan plaid as a patch on your front shirt pocket. And on the back, ask the important question that all CMU students should know the answer to: got plaid?",
+    colors: {
+        white: {
             "front": "shirt_images/plaid-white-front.png",
             "back": "shirt_images/plaid-white-back.png"
         },
-        "pink": {
+        pink: {
             "front": "shirt_images/plaid-pink-front.png",
             "back": "shirt_images/plaid-pink-back.png"
         }
     },
-    "default": {
-        "front": "shirt_images/default-w-front.png",
-        "back": "shirt_images/default-w-back.png"
+    default: {
+        front: "shirt_images/default-w-front.png",
+        back: "shirt_images/default-w-back.png"
     }
 },
 {

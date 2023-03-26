@@ -1,5 +1,44 @@
 .fb {
-    border: 1px black solid;
-    width: 600px;
+    border: 5px rgb(33, 25, 82) solid;
+    width: 406px;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top img {
+    width: 180px;
+    margin-left: 10%;
+    margin-right: 40%;
+}
+
+.nav {
+    background-color: rgb(116, 144, 184);
+}
+
+.low {
+    background-color: rgb(33, 25, 82);
+}
+
+ul {
+    margin: 0%;
+    padding: 0;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+li {
+    margin: 15px 5%;
+    display: flex;
+}
+

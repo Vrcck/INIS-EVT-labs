@@ -93,9 +93,9 @@ shirts.forEach((shirt) => {
     }
 
     colorP.textContent = text;
-
-    fb.appendChild(nameP);
+    
     fb.appendChild(picture);
+    fb.appendChild(nameP);
     fb.appendChild(colorP);
     fb.appendChild(quickView);
     fb.appendChild(seePage);
