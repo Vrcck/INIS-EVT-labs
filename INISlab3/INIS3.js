@@ -21,6 +21,7 @@ shirts.forEach((shirt) => {
 
 // предпросмотр
     const quickView = document.createElement("button");
+    quickView.classList.add("buttons");
     quickView.innerText = "Quick View";
     quickView.addEventListener("click", () => {
         if(document.querySelector(".mod-wind")) document.querySelector(".mod-wind").remove();
@@ -56,12 +57,22 @@ shirts.forEach((shirt) => {
         closeBtn.onclick = () => {
             modWind.remove();
         };
-        modWind.appendChild(img);
-        modWind.appendChild(imgBack);
-        modWind.appendChild(nameP);
-        modWind.appendChild(priceP);
-        modWind.appendChild(descP);
-        modWind.appendChild(closeBtn);
+        closeBtn.classList.add("button-close");
+
+        const shirtInfo = document.createElement("div");
+        shirtInfo.classList.add("shirt-info");
+        shirtInfo.appendChild(nameP);
+        shirtInfo.appendChild(priceP);
+        shirtInfo.appendChild(descP);
+        shirtInfo.appendChild(closeBtn);
+
+        const imgInfo = document.createElement("div");
+        imgInfo.classList.add("img-info");
+        imgInfo.appendChild(img);
+        imgInfo.appendChild(imgBack);
+        
+        modWind.appendChild(imgInfo);
+        modWind.appendChild(shirtInfo);
 
         const modWinDiv = document.getElementById('modwinddiv');
         modWinDiv.appendChild(modWind);
@@ -69,6 +80,12 @@ shirts.forEach((shirt) => {
 
     const seePage = document.createElement("button");
     seePage.innerText = "See Page";
+    seePage.classList.add("buttons");
+
+    const divButtons = document.createElement("div");
+    divButtons.classList.add("div-buttons");
+    divButtons.appendChild(quickView);
+    divButtons.appendChild(seePage);
 
     // подсчет цветов
     const colors = shirt.colors;
@@ -97,8 +114,7 @@ shirts.forEach((shirt) => {
     fb.appendChild(picture);
     fb.appendChild(nameP);
     fb.appendChild(colorP);
-    fb.appendChild(quickView);
-    fb.appendChild(seePage);
+    fb.appendChild(divButtons);
 
     container.appendChild(fb);
 })

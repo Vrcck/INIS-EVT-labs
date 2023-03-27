@@ -8,6 +8,7 @@
     margin: 20px;
     padding: 10px;
     border-radius: 20px;
+    align-items: center;
 }
 
 .top {
@@ -65,4 +66,35 @@ a {
 
 #modwinddiv {
     margin-bottom: 70px;
+    padding: 20px;
+}
+
+.buttons {
+    padding: 10px;
+    background-color: rgb(33, 25, 82);
+    color: #fff;
+    border:rgb(33, 25, 82) 1px solid;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.button-close {
+    padding: 10px;
+    background-color: rgb(33, 25, 82);
+    color: #fff;
+    border:rgb(33, 25, 82) 1px solid;
+    border-radius: 10px;
+}
+
+.div-buttons{
+    display: flex;
+}
+
+.mod-wind {
+    display: flex;
+}
+
+.img-info {
+    display: flex;
+    margin-right: 30px;
 }
