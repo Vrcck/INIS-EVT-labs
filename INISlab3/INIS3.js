@@ -81,6 +81,10 @@ shirts.forEach((shirt) => {
     const seePage = document.createElement("button");
     seePage.innerText = "See Page";
     seePage.classList.add("buttons");
+    seePage.addEventListener("click", () => {
+        localStorage.setItem('shirt', JSON.stringify(shirt));
+        window.location.href = "detales.html";
+    })
 
     const divButtons = document.createElement("div");
     divButtons.classList.add("div-buttons");

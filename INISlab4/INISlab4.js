@@ -62,7 +62,7 @@ for (let i = 0; i < shirt.length; i++) {
 }
 if (isDifferent) {
     const colorsWord = (colorsCount === 1) ? "Цвет" : "Цвета";
-    text = ${colorsWord}: ;
+    text = `${colorsWord}: `;
 }
 const textAv = document.createElement("p");
 textAv.classList.add('p-av-shirt-det');
@@ -101,10 +101,10 @@ const buttonsFrB = document.createElement("div");
 buttonsFrB.classList.add('div-front-back');
 const frontButton = document.createElement("button");
 frontButton.classList.add("front-button");
-frontButton.textContent = Front;
+frontButton.textContent = `Front`;
 const backButton = document.createElement("button");
 backButton.classList.add("back-button");
-backButton.textContent = Back;
+backButton.textContent = `Back`;
 buttonsFrB.appendChild(frontButton);
 buttonsFrB.appendChild(backButton);
 backButton.addEventListener("click", function() {
