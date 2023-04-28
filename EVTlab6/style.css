@@ -4,6 +4,7 @@ html {
 
   body {
     margin: 0;
+
   }
 
   header {
@@ -21,4 +22,29 @@ html {
     margin: 50px;
     font-size: 20px;
     background-color: red;
+    animation: vibr 1s infinite;
+    position: relative;
+  }
+
+  @keyframes vibr{
+    0%{
+      left: 0;
+    }
+    25%{
+      left: 5px;
+    }
+    50%{
+      left: 0;
+    }
+    75%{
+      left: -5px;
+    }
+    100%{
+      left: 0;
+    }
+  }
+
+  button:hover {
+    animation: none;
+    background-color: green;
   }
