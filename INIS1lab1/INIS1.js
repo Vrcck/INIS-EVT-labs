@@ -1,4 +1,4 @@
-let numberOfFilms;
+/*let numberOfFilms;
 do {
     numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?', '');
 } while (numberOfFilms == '' || numberOfFilms === null || numberOfFilms >= 50);
@@ -37,4 +37,8 @@ do {
 personalMovieDB.movies[filmOne] = evOne;
 personalMovieDB.movies[filmTwo] = evTwo;
 
-console.log(personalMovieDB);
+console.log(personalMovieDB);*/
+const make = 'Ford'; 
+const model = 'Mustang'; 
+const car = {make, model}; 
+concole.log(car);
