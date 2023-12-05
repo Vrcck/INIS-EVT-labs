@@ -1,6 +1,8 @@
-key = [['q','w','e','r','t'],['y','u','i','o','p'],['a','s','d','f','g'],['h','k','l','z','x'],['c','v','b','n','m']]
+key = [['q','w','e','r','t'],['y','u','i','o','p'],['a','s','d','f','g'],['h','k','l','z','x'],['c','v','b','n','m']] 
+# J и I объединены в одну ячейку
+
 text = 'semyonova varvara olegovna'
-bigramm = []
+bigramm = ''
 shifr = ''
 
 import re
@@ -10,5 +12,5 @@ import re
 
 text = re.sub(r'\s+', '', text)
 print(text)
-#for i in range (len(text)):
-
+for i in range(0, len(text), 2):
+    print(text[i]+text[i+1])
